@@ -1,0 +1,196 @@
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #14213d;
+  height: 25rem;
+  color: white;
+  padding: 20px;
+  font-family: "Poppins";
+}
+
+.descript {
+  width: 30rem;
+  padding: 10px;
+  color: white;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.descript img {
+  width: 160px;
+  height: 100px;
+}
+
+.descript p {
+  margin-top: 1rem;
+}
+
+.descript span {
+  font-size: 15px;
+}
+
+.descript ul li:hover,
+.courses ul li:hover,
+.branches ul li:hover {
+  color: #ffb703;
+}
+
+.courses {
+  height: 22rem;
+  width: 20rem;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.courses h1,
+.branches h1,
+.location h1 {
+  text-align: left;
+  font-size: 24px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.courses ul {
+  line-height: 2rem;
+  font-size: 14px;
+}
+
+.courses ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: color 0.3s ease-in-out;
+}
+.courses ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #ffb703;
+  transition: width 0.4s ease-in-out;
+}
+.courses ul li:hover {
+  cursor: pointer;
+  color: #ffb703;
+}
+
+.courses ul li:hover::after {
+  width: 100%;
+}
+.branches ul {
+  line-height: 2.7rem;
+  font-size: 14px;
+  padding-inline-start: 0 !important;
+}
+
+.branches ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  transition: color 0.3s ease-in-out;
+}
+.branches ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #ffb703;
+  transition: width 0.4s ease-in-out;
+}
+.branches ul li:hover {
+  cursor: pointer;
+  color: #ffb703;
+}
+
+.branches ul li:hover::after {
+  width: 100%;
+}
+
+.branches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 22rem;
+  width: 20rem;
+}
+
+.copyright {
+  color: #5751e1;
+  background-color: #22304d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.copyright p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem !important;
+}
+
+.courses h1::before,
+.branches h1::before,
+.location h1::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background: #5751e1;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    height: 95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .descript,
+  .courses,
+  .branches,
+  .location {
+    width: 100%;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+
+  .courses {
+    display: block;
+    text-align: left;
+  }
+
+  .branches {
+    display: block;
+  }
+
+  .descript p {
+    margin-top: 1.5rem;
+  }
+
+  .courses ul {
+    margin: 0rem !important;
+    padding: 0rem !important;
+  }
+}

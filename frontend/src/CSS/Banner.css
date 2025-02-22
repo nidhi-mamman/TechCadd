@@ -1,0 +1,78 @@
+.audio-section {
+  display: flex;
+  height: 20rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/bg/breadcrumb_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.globe {
+  top: 4rem!important;
+  left: 5rem!important;
+  position: absolute;
+}
+
+.star {
+  height: 3rem;
+  width: 3rem;
+  top:2rem!important;
+  right: 9rem!important;
+  position: absolute;
+}
+
+.plane {
+  top:5rem!important;
+  right: 35rem!important;
+  position: absolute;
+}
+
+.book {
+  top:12rem!important;
+  right: 20rem!important;
+  position: absolute;
+}
+
+.opp-curl {
+  height: 20rem;
+  top:0!important;
+  right: 1rem!important;
+  position: absolute;
+}
+
+.about-txt{
+  font-family: 'Poppins';
+  color: #14213d;
+  position: absolute;
+  font-size: 40px;
+  top: 7rem;
+  left: 2rem;
+  font-weight: 600;
+}
+
+.route{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #14213d;
+  position: absolute;
+  top:11rem;
+  left: 2rem;
+}
+
+@media screen and (max-width:768px){
+  .opp-curl,.plane{
+    display: none;
+  }
+
+  .star{
+    right: 2rem!important;
+  }
+
+  .book{
+   right: 5rem!important;
+  }
+}

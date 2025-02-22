@@ -1,0 +1,83 @@
+.start-journey {
+  height: 40rem;
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #14213d;
+  margin-bottom: 2rem;
+  padding: 20px;
+}
+
+.startJourney {
+  width: 15rem;
+  padding: 10px;
+  border-radius: 50px;
+  background: #5751e1;
+  color: white;
+}
+
+.start-h2 {
+  color: white;
+  font-weight: 700;
+}
+
+.start-p {
+  width: 35rem;
+  font-size: 15px;
+  line-height: 1.5rem;
+  color: rgb(194, 191, 191);
+}
+
+.experts,
+.learn,
+.certificate,
+.email {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.journey-content {
+  gap: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.journey-content span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.journey-content p {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  line-height: 1.5rem;
+  color: rgb(192, 189, 189);
+}
+
+@media screen and (max-width: 768px) {
+  .start-journey {
+    height: 70rem;
+  }
+  .journey-content {
+    flex-direction: column;
+  }
+
+  .journey-content {
+    gap: 0rem;
+  }
+
+  .start-p{
+    width: 20.5rem;
+  }
+
+  .start-content p{
+    width: 20rem;
+  }
+}

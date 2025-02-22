@@ -1,0 +1,133 @@
+.navbar {
+  top: 0;
+  padding: 10px;
+  z-index: 999;
+  display: flex;
+  background: white;
+  align-items: center;
+  position: sticky;
+  justify-content: space-between;
+}
+
+.logo img {
+  width: 8rem;
+  height: 5rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+.items li:hover{
+  color: #5751e1;
+}
+
+.items{
+  gap: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0rem!important;
+}
+
+ul li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.demo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-btns {
+  height: 3rem;
+  width: 10rem;
+  font-size: 14px;
+  color: #14213d;
+  font-weight: 600;
+  outline: none;
+  border: 2px solid #ffb703;
+  box-shadow: 5px 5px 5px #14213d;
+  border-radius: 20px;
+  background-color: #ffb703;
+}
+
+.mobile-menu,
+.mobile-items {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-items .items {
+    display: none;
+  }
+  .demo-area {
+    display: none;
+  }
+  .mobile-menu {
+    background-color: white;
+    position: absolute;
+  }
+  .mobile-menu ul {
+    padding: 0rem !important;
+    display: flex;
+    gap:0rem!important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mobile-menu.show {
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: block;
+  }
+
+  .mobile-menu.hide {
+    display: none;
+  }
+  .mobile-menu .mobile-item .logo-cross {
+    display: flex;
+    gap: 14.2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: #14213d;
+  }
+
+  .mobile-menu li {
+    width: 100%;
+    padding: 10px;
+    margin-left: 1rem;
+    border-bottom: 1px solid rgb(210, 206, 206);
+  }
+  .logo-cross img {
+    width: 8rem;
+    height: 5rem;
+  }
+  .mobile-item-social-media {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none!important;
+  }
+  .mobile-item-social-media .squares {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #5751e1;
+  }
+  
+}
