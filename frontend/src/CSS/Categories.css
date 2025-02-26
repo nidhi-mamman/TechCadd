@@ -431,7 +431,7 @@
 }
 @media screen and (max-width: 768px) {
   .category-section {
-    height: 60rem;
+    height: 100rem;
   }
 
   .category-section .browse:hover {

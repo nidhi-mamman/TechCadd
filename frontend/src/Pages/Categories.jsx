@@ -73,7 +73,7 @@ const Slider = () => {
         </p>
       </div>
 
-      <div className="techCadd">
+      {/* <div className="techCadd">
         <div className="left-div">
           <img src={shape1} className="shape1" />
           <img src={shape2} className="shape2" />
@@ -107,9 +107,9 @@ const Slider = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div> */}
 
-      <div className="aboutus">
+      {/* <div className="aboutus">
         <h6>ABOUT US</h6>
         <h1>TechCADD Computer Education</h1>
         <div>
@@ -273,7 +273,7 @@ const Slider = () => {
           <img src={techcadd} alt="" width={250} height={150} />
           <img src={protech} alt="" width={250} height={150}/>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

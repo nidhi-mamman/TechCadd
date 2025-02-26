@@ -294,6 +294,10 @@
     display: none;
   }
 
+  .left-section{
+    padding-inline: 1rem!important;
+  }
+
   .left-section,
   .right-section {
     height: 50%;

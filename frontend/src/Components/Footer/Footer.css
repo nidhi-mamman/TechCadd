@@ -176,6 +176,10 @@
     flex-direction: column;
   }
 
+  .copyright p{
+    font-size: 14px;
+  }
+
   .courses {
     display: block;
     text-align: left;
