@@ -61,6 +61,10 @@
   color: rgb(192, 189, 189);
 }
 
+.start-content{
+  width: 15rem;
+}
+
 @media screen and (max-width: 768px) {
   .start-journey {
     height: 70rem;
