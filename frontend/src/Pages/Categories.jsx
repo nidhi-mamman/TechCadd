@@ -2,7 +2,7 @@ import "../CSS/Categories.css";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Ai from "../assets/blog/Ai.svg";
+import Ai from "../assets/blog/AI.svg";
 import CS from "../assets/blog/cybersecurity.svg";
 import Mern from "../assets/blog/MERN.svg";
 import DS from "../assets/blog/DataScience.svg";
