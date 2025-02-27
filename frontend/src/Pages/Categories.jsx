@@ -73,7 +73,7 @@ const Slider = () => {
         </p>
       </div>
 
-      {/* <div className="techCadd">
+      <div className="techCadd">
         <div className="left-div">
           <img src={shape1} className="shape1" />
           <img src={shape2} className="shape2" />
@@ -107,9 +107,9 @@ const Slider = () => {
             </li>
           </ul>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="aboutus">
+      <div className="aboutus">
         <h6>ABOUT US</h6>
         <h1>TechCADD Computer Education</h1>
         <div>
@@ -158,7 +158,7 @@ const Slider = () => {
         </div>
       </div>
 
-      <div className="whyUs">
+      {/* <div className="whyUs">
         <h5>We Are</h5>
         <h1>WHY CHOOSE US</h1>
         <p>
@@ -232,9 +232,9 @@ const Slider = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="collaborators">
+      {/* <div className="collaborators">
         <h5>OUR PARTNERS</h5>
         <h1>Collaborate with Our Associates</h1>
         <p>
@@ -264,16 +264,16 @@ const Slider = () => {
             <SwiperSlide><img src={homedrop} alt="" height={150} width={200}/></SwiperSlide>
           </Swiper>
         </div>
-      </div>
+      </div> */}
 
-      <div className="brands">
+      {/* <div className="brands">
         <h1>Our Brands</h1>
         <div className="brands-name">
           <img src={aitech} alt="" width={250} height={150}/>
           <img src={techcadd} alt="" width={250} height={150} />
           <img src={protech} alt="" width={250} height={150}/>
         </div>
-      </div> */}
+      </div>  */}
     </>
   );
 };
