@@ -70,15 +70,16 @@
     height: 70rem;
   }
   .journey-content {
+    gap:3rem;
     flex-direction: column;
-  }
-
-  .journey-content {
-    gap: 0rem;
   }
 
   .start-p{
     width: 20.5rem;
+  }
+
+  .start-h2{
+    font-size:20px;
   }
 
 }

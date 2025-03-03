@@ -1,7 +1,7 @@
 import "../CSS/Categories.css";
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import Ai from "../assets/blog/AI.svg";
 import CS from "../assets/blog/cybersecurity.svg";
 import Mern from "../assets/blog/MERN.svg";
@@ -14,23 +14,44 @@ import shape2 from "../assets/blog/shape-37.png";
 import shape3 from "../assets/blog/shape-02.png";
 import mainimage from "../assets/blog/main.webp";
 import { GiCheckMark } from "react-icons/gi";
-import web from "../assets/blog/experience.svg";
-import rocket from "../assets/blog/lifetime.svg";
-import client from "../assets/blog/users.svg";
-import experience from "../assets/blog/experience.svg";
-import experts from "../assets/blog/satisfication.svg";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import team from "../assets/blog/team.svg";
-import shrishyam from '../assets/banner/shrishyam.png'
-import whitehorse from '../assets/banner/WhiteHorse.png'
-import icutech from '../assets/banner/IAM.png'
-import homedrop from '../assets/banner/homedrop.jpg'
-import edutech from '../assets/banner/EDUTECH INFOSYS.png'
-import cps from '../assets/banner/CPCS.png'
-import aitech from '../assets/banner/aitech.webp'
-import techcadd from '../assets/banner/techcadd.webp'
-import protech from '../assets/banner/protech.webp'
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Autoplay } from "swiper/modules";
+import shrishyam from "../assets/banner/shrishyam.png";
+import whitehorse from "../assets/banner/WhiteHorse.png";
+import icutech from "../assets/banner/IAM.png";
+import homedrop from "../assets/banner/homedrop.jpg";
+import edutech from "../assets/banner/EDUTECH INFOSYS.png";
+import cps from "../assets/banner/CPCS.png";
+import aitech from "../assets/banner/aitech.webp";
+import techcadd from "../assets/banner/techcadd.webp";
+import protech from "../assets/banner/protech.webp";
+import AiCourse from "../assets/jal images/AiCourse.jpeg";
+import cyber from "../assets/jal images/CYBER.webp";
+import python from "../assets/jal images/ful stack.webp";
+import python1 from "../assets/jal images/PYTHON (1).webp";
+import digital from "../assets/jal images/digital market (1).webp";
+import ethical from "../assets/jal images/HACKING.webp";
+import analysis from "../assets/jal images/ANALYSIS.webp";
+import java from "../assets/jal images/JAVA.webp";
+import webdesigning from "../assets/jal images/web design.webp";
+import mean from "../assets/jal images/mean stack.webp";
+import mern from "../assets/jal images/mern stack.webp";
+import { IoIosStar } from "react-icons/io";
+import datascience from "../assets/jal images/DATA SCIENCE (O).webp";
+import { FaArrowRight } from "react-icons/fa6";
+import ceo from '../assets/blog/ceo.webp'
+import shilpa from '../assets/blog/shilpa-mam.jpg'
+import subodh from '../assets/blog/team3.webp'
+import rama from '../assets/blog/team5.webp'
+import hr from '../assets/blog/team6.webp'
+import hod from '../assets/blog/team2.webp'
+import leader from '../assets/blog/team1.webp'
+import gurpinder from '../assets/blog/gurpindersir3.png'
+import dots1 from '../assets/blog/shape-02.png'
+import dashed from '../assets/blog/dashed.png'
+import dots2 from '../assets/blog/shape-37.png'
+import abstract from '../assets/blog/abstract.webp'
+
 
 const Slider = () => {
   return (
@@ -82,9 +103,9 @@ const Slider = () => {
         </div>
         <div className="right-div">
           <h6>TECHCADD COMPUTER EDUCATION</h6>
-          <h1>
-            Learn & Grow Your Skills From <span>TechCADD</span>
-          </h1>
+          <h2>
+            Learn & Grow Your Skills From <br /> <span>TechCADD</span>
+          </h2>
           <p>
             Learn and grow your skills with TechCADD, your trusted platform for
             education. Whether you&apos;re looking to upgrade your technical
@@ -111,7 +132,7 @@ const Slider = () => {
 
       <div className="aboutus">
         <h6>ABOUT US</h6>
-        <h1>TechCADD Computer Education</h1>
+        <h2>TechCADD Computer Education</h2>
         <div>
           <p>
             Techcadd Computer Training Institute is dedicated to fostering skill
@@ -158,122 +179,650 @@ const Slider = () => {
         </div>
       </div>
 
-      {/* <div className="whyUs">
-        <h5>We Are</h5>
-        <h1>WHY CHOOSE US</h1>
-        <p>
-          TechCADD Computer Training Institute is dedicated to fostering skill
-          development, practical learning, and personal growth. Our ambitious
-          learning center has achieved numerous accomplishments since its
-          founding, and we are continually striving to reach new heights.
-        </p>
-        <div className="whyUs-flex">
-          <div className="whyUs-left">
-            <h2>Why We Are #1 In The Industry?</h2>
+      <div className="whyUs">
+        <div className="whyUs-left">
+          <p>
+            <b>Hands-On Learning</b>
             <p>
-              Experience top-tier education at TechCADD, the best IT training
-              institute in Jalandhar. We are dedicated to helping you sharpen
-              your technical skills and explore new professional opportunities.
-              Our expertly crafted courses are tailored to meet industry
-              demands, providing hands-on experience and practical knowledge
-              that set you apart in the competitive job market. With guidance
-              from our seasoned instructors, you&apos;ll gain the confidence and
-              expertise needed to excel in your career. Choose TechCADD today
-              and take the first step towards a brighter, more successful future
-              in IT.
-              <ul>
-                <li>
-                  <GiCheckMark />
-                  Expert Trainers
-                </li>
-                <li>
-                  <GiCheckMark />
-                  Digital Learning
-                </li>
-                <li>
-                  <GiCheckMark />
-                  Ongoing Access
-                </li>
-              </ul>
+              {" "}
+              Build your confidence with practical training that includes
+              real-world projects, live workshops, and industry-aligned case
+              studies. Our hands-on approach ensures you&apos;re ready to tackle
+              the challenges of your future job with practical knowledge and a
+              strong skill set. best IT training institute in jalandhar
             </p>
+          </p>
+          <p>
+            <b> Industry-Recognized Certifications</b>
+            <p>
+              Gain industry-recognized certifications that validate your skills
+              and boost your credibility with prospective employers. Our
+              certifications demonstrate your commitment to mastering in-demand
+              skills, making you stand out as a highly qualified candidate.
+            </p>
+          </p>
+          <p>
+            <b>High Placement Success </b>
+            <p>
+              As the best computer training institute in Jalandhar,
+              Techcadd&apos;s commitment to excellence has resulted in a strong
+              track record of successful student placements and positive
+              feedback from alumni. Our reputation for providing quality
+              training helps our students gain trust with employers, increasing
+              their chances of success.
+            </p>
+          </p>
+        </div>
+        <div className="whyUs-right">
+          <h6>WHY US</h6>
+          <h4>Why We Are #1 In The Industry?</h4>
+          <p>
+            Experience top-tier education at TechCADD, the best IT training
+            institute in Jalandhar. We are dedicated to helping you sharpen your
+            technical skills and explore new professional opportunities. Our
+            expertly crafted courses are tailored to meet industry demands,
+            providing hands-on experience and practical knowledge that set you
+            apart in the competitive job market. With guidance from our seasoned
+            instructors, you&apos;ll gain the confidence and expertise needed to
+            excel in your career. Choose TechCADD today and take the first step
+            towards a brighter, more successful future in IT.
+            <ul>
+              <li>
+                <GiCheckMark />
+                Expert Trainers
+              </li>
+              <li>
+                <GiCheckMark />
+                Digital Learning
+              </li>
+              <li>
+                <GiCheckMark />
+                Ongoing Access
+              </li>
+            </ul>
+            <p className="learnmore">
+              Learn More <FaArrowRight />
+            </p>
+          </p>
+        </div>
+      </div>
+
+      <div className="onlinecourses">
+        <h5>POPULAR COURSES</h5>
+        <h1>Courses We Offer</h1>
+        <div className="popular-courses">
+          <div className="card">
+            <img src={AiCourse} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
           </div>
-          <div className="whyUs-right">
-            <div className="features">
-              <div className="div1">
-                <img src={web} alt="" width={150} height={100} />
-                <span>100+</span>
-                <p>Countries served</p>
-              </div>
-              <div className="div2">
-                <img src={rocket} alt="" width={150} height={100} />{" "}
-                <span>100+</span>
-                <p>Countries served</p>
-              </div>
-              <div className="div3">
-                <img src={experts} alt="" width={150} height={100} />{" "}
-                <span>100+</span>
-                <p>Countries served</p>
-              </div>
-              <div className="div4">
-                <img src={client} alt="" width={150} height={100} />{" "}
-                <span>100+</span>
-                <p>Countries served</p>
-              </div>
-              <div className="div5">
-                <img src={team} alt="" width={150} height={100} />{" "}
-                <span>100+</span>
-                <p>Countries served</p>
-              </div>
-              <div className="div6">
-                <img src={experience} alt="" width={150} height={100} />{" "}
-                <span>100+</span>
-                <p>Countries served</p>
-              </div>
+          <div className="card">
+            <img src={cyber} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={python} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={digital} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={ethical} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={python1} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={java} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={analysis} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={webdesigning} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={mean} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={datascience} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
+            </div>
+          </div>
+          <div className="card">
+            <img src={mern} className="card-img-top" alt="..." />
+            <div className="card-body">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+            </div>
+            <div className="overlay">
+              <h6 className="badge">CSE/IT</h6>
+              <span>Artificial Intelligence Course</span>
+              <p className="rating">
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+                <IoIosStar size={18} />
+              </p>
+              <p className="card-text">
+                Transform your future with Ethical Hacking course at
+                Jalandhar&apos;s top computer institute. Learn cutting-edge
+                skills to thrive today!
+              </p>
+              <p className="enrolnow">
+                Enroll Now <FaArrowRight />
+              </p>
             </div>
           </div>
         </div>
-      </div> */}
-
-      {/* <div className="collaborators">
-        <h5>OUR PARTNERS</h5>
-        <h1>Collaborate with Our Associates</h1>
-        <p>
-          Team up with our associates to explore uncharted territories.
-          Together, we&apos;ll blend our strengths and inspire groundbreaking
-          innovations for a brighter future!
+        <p className="learnmore">
+          Learn More <FaArrowRight />
         </p>
-        <div className="slider">
-          <Swiper
-            spaceBetween={30} 
-            slidesPerView={3} 
-            centeredSlides={false} 
-            loop={true} 
-            speed={1000}
-            autoplay={{
-              delay: 1000,
-              disableOnInteraction: false,
-            }}
-            modules={[Autoplay]}
-            className="mySwiper"
-          >
-            <SwiperSlide><img src={shrishyam} alt="" height={100} width={200} style={{display:"block"}} /></SwiperSlide>
-            <SwiperSlide><img src={whitehorse} alt="" height={100} width={200}/></SwiperSlide>
-            <SwiperSlide><img src={icutech} alt="" height={100} width={200}/></SwiperSlide>
-            <SwiperSlide><img src={edutech} alt="" height={100} width={220}/></SwiperSlide>
-            <SwiperSlide><img src={cps} alt="" height={100} width={200}/></SwiperSlide>
-            <SwiperSlide><img src={homedrop} alt="" height={150} width={200}/></SwiperSlide>
-          </Swiper>
+        <img src={dots1} className="dots1" />
+        <img src={dashed} className="dashed" />
+        <img src={dots2} className="dots2" />
+        <img src={abstract} className="abstract" />
+        <div className="quarter">
+          <div className="enrolled">
+            <span>1,800+</span>
+            <p>Students Enrolled</p>
+          </div>
+          <div className="branchess">
+            <span>6+</span>
+            <p>Branches</p>
+          </div>
+          <div className="enrolled1">
+            <span>65+</span>
+            <p>Top Instructors</p>
+          </div>
+          <div className="branchess1">
+            <span>99.99%</span>
+            <p>Satisfaction Rate</p>
+          </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="brands">
+      <div className="collaborators">
+        <div className="collab-left">
+          <h6>OUR PARTNERS</h6>
+          <h4>Collaborate with Our Associates</h4>
+          <p>
+            Team up with our associates to explore uncharted territories.
+            Together, we&apos;ll blend our strengths and inspire groundbreaking
+            innovations for a brighter future!
+          </p>
+        </div>
+        <div className="collab-right">
+          <img src={shrishyam} height={100} width={150} />
+          <img src={whitehorse} height={50} width={120} />
+          <img src={icutech} height={50} width={120} />
+          <img src={edutech} height={50} width={120} />
+          <img src={cps} height={100} width={120} />
+          <img src={homedrop} height={150} width={150} />
+        </div>
+      </div>
+
+      <div className="brands">
         <h1>Our Brands</h1>
         <div className="brands-name">
-          <img src={aitech} alt="" width={250} height={150}/>
-          <img src={techcadd} alt="" width={250} height={150} />
-          <img src={protech} alt="" width={250} height={150}/>
+          <img src={aitech} alt="" />
+          <img src={techcadd} alt="" />
+          <img src={protech} alt="" />
         </div>
-      </div>  */}
+      </div>
+
+      <div className="management">
+        <h2>Our Management</h2>
+        <div className="names">
+          <div>
+            <div className="ceo">
+              <img src={ceo} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={shilpa} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={subodh} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={rama} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={hr} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={hod} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={leader} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+          <div>
+            <div className="ceo">
+              <img src={gurpinder} alt="" height={150} width={150} />
+            </div>
+            <p className="name">
+              Mr.Gourav Gupta
+            </p>
+            <p className="designation">
+              CEO & Founder
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* <div className="gallery">
+      <div className="slider">
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={3}
+          centeredSlides={false}
+          loop={true}
+          speed={1000}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            320: { slidesPerView: 1, spaceBetween: 10 },
+            480: { slidesPerView: 2, spaceBetween: 15 },
+            768: { slidesPerView: 1, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 30 },
+            1440: { slidesPerView: 5, spaceBetween: 40 },
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img
+              src={shrishyam}
+              alt=""
+              height={100}
+              width={200}
+              style={{ display: "block" }}
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={whitehorse} alt="" height={100} width={200} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={icutech} alt="" height={100} width={200} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={edutech} alt="" height={100} width={220} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={cps} alt="" height={100} width={200} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={homedrop} alt="" height={150} width={200} />
+          </SwiperSlide>
+        </Swiper>
+        </div>
+      </div> */}
     </>
   );
 };

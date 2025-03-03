@@ -157,7 +157,7 @@
 /* TECHCADD SECTION */
 
 .techCadd {
-  height: 35rem;
+  height: 42rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -172,8 +172,8 @@
 }
 
 .mainImage {
-  width: 25rem;
-  height: 25rem;
+  width: 30rem;
+  height: 30rem;
   top: 4rem;
   left: 5rem;
   z-index: 3;
@@ -195,34 +195,34 @@
   position: absolute;
 }
 .shape3 {
-  top: 16rem;
-  left: 10rem;
+  top: 22rem;
+  left: 11rem;
   position: absolute;
 }
 
 .right-div h6 {
-  top: 4rem;
-  left: 35rem;
+  top: 8rem;
+  left: 38rem;
   position: absolute;
   color: rgb(118, 118, 118) !important;
 }
 
-.right-div h1 {
-  top: 6rem;
-  left: 35rem;
+.right-div h2 {
+  top: 10rem;
+  left: 38rem;
   position: absolute;
   color: #14213d;
   font-weight: 600;
 }
 
-.right-div h1 span {
+.right-div h2 span {
   font-weight: 600;
   position: relative;
   color: red !important;
   display: inline-block;
 }
 
-.right-div h1 span::before {
+.right-div h2 span::before {
   content: "";
   position: absolute;
   bottom: -3px;
@@ -234,9 +234,11 @@
 }
 
 .right-div p {
-  top: 14rem;
-  left: 35rem;
+  top: 17rem;
+  left: 38rem;
   right: 2rem;
+  font-size: 14px;
+  text-align: justify;
   position: absolute;
   color: rgb(140, 138, 138) !important;
 }
@@ -247,9 +249,10 @@
 }
 
 .right-div ul {
-  top: 22rem;
-  left: 33rem;
+  top: 24rem;
+  left: 36rem;
   line-height: 2.3rem;
+  font-size: 14px;
   position: absolute;
 }
 
@@ -263,20 +266,23 @@
 
 .aboutus {
   text-align: center;
+  padding: 2rem;
 }
 
 .aboutus h6 {
   color: rgb(118, 118, 118) !important;
 }
 
-.aboutus h1,
-.collaborators h1 {
+.aboutus h2,
+.management h2,
+.collaborators h4 {
   color: #14213d;
   font-weight: 600;
 }
 
 .aboutus div {
   padding: 2rem;
+  font-size: 14px;
   text-align: justify;
 }
 
@@ -287,118 +293,125 @@
 /* WHY US SECTION */
 
 .whyUs {
-  height: 40rem;
-  padding: 2rem;
-  margin: 2rem;
-  text-align: center;
+  height: 42rem;
+  padding: 4rem;
+  font-size: 14px;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.whyUs h5,
-.collaborators h5 {
+.collaborators h6,
+.whyUs h6 {
   color: rgb(140, 138, 138) !important;
 }
 
-.whyUs h1,
 .brands h1 {
   color: #14213d;
   font-weight: 600;
 }
 
-.whyUs p {
-  text-align: center;
-  font-size: 15px;
-  color: #14213d;
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.whyUs-flex {
-  margin: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
+.whyUs-right,
 .whyUs-left {
   text-align: justify;
+  line-height: 2rem;
   width: 100%;
 }
 
-.whyUs-left ul {
+.whyUs-right p,
+.whyUs-right h4,
+.whyUs-right ul {
+  line-height: 2.4rem;
+}
+
+.whyUs-right ul {
   margin-top: 1rem;
   padding: 0rem !important;
 }
 
-.whyUs-left ul li {
+.whyUs-right ul li {
   gap: 1rem;
   display: flex;
   align-items: center;
 }
 
-.whyUs-left h2 {
-  margin-top: 1rem;
+.whyUs-right h4 {
   font-weight: 600;
   color: #14213d;
 }
 
-.whyUs-left p {
-  font-size: 16px;
+.whyUs-right p {
+  font-size: 14px;
   line-height: 1.8rem;
   text-align: justify;
 }
 
-.whyUs-right .features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.features .div1,
-.features .div2 {
-  padding: 0.5rem;
-  gap: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-right: 3px solid #14213d !important;
-  border-bottom: 3px solid #14213d !important;
-}
-
-.features .div3 {
-  padding: 0.5rem;
-  gap: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-bottom: 3px solid #14213d !important;
-}
-
-.features .div4,
-.features .div5 {
-  padding: 0.5rem;
-  gap: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-right: 3px solid #14213d;
-}
-
-.features .div6 {
-  padding: 0.5rem;
-  gap: 0.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 /* COLLABORATORS SECTION */
 .collaborators {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
 }
+
+.collab-left {
+  width: 100%;
+  padding-inline: 3rem;
+}
+
+.collab-right {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.shrishyam {
+}
+
+.management {
+  display: flex;
+  padding: 5rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.management .names {
+  gap: 4rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  align-items: center;
+}
+
+.ceo {
+  filter: grayscale(1.5);
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.management .name {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin-top: 1rem !important;
+  margin-bottom: 0rem !important;
+}
+
+.management .designation {
+  text-align: center;
+  font-size: 12px;
+  color: grey;
+}
+
+.ceo img {
+  border-radius: 50%;
+}
+
 .slider {
   padding: 2rem;
 }
@@ -414,14 +427,12 @@
 
 .collaborators p {
   font-size: 14px;
-  padding-block: 10px;
-  padding-inline: 300px;
   color: rgb(118, 118, 118) !important;
 }
 
 /*BRANDS SECTION*/
 .brands {
-  padding-block: 30px;
+  padding-block: 2rem;
   text-align: center;
 }
 
@@ -433,6 +444,241 @@
   justify-content: center;
 }
 
+.brands .brands-name img {
+  width: 250px;
+  height: 150px;
+}
+
+/* COURSES SECTION */
+.onlinecourses {
+  width: 100% !important;
+  height: 110rem !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 4rem;
+  margin-bottom: 20rem;
+  background-image: url("../assets/bg/wsus-img-2024-06-23-04-25-27-8319.webp");
+}
+
+.quarter {
+  top: 100rem;
+  width: 45rem;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  z-index: 2;
+  box-shadow: 2px 2px 2px rgb(177, 176, 176);
+}
+
+.enrolled,
+.branchess,
+.branchess1,
+.enrolled1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2.3rem;
+}
+
+.enrolled {
+  border-right: 1px solid rgb(209, 209, 209) !important;
+  border-bottom: 1px solid rgb(209, 209, 209) !important;
+}
+
+.enrolled span,
+.enrolled1 span,
+.branchess1 span {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: fantasy;
+  color: #17326b;
+}
+
+.enrolled p,
+.enrolled1 p,
+.branchess1 p,
+.branchess p {
+  color: rgb(46, 46, 46);
+  font-size: 13px;
+}
+
+.branchess {
+  border-bottom: 1px solid rgb(209, 209, 209) !important;
+}
+
+.branchess span {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: fantasy;
+  color: red;
+}
+
+.enrolled1 {
+  border-right: 1px solid rgb(209, 209, 209) !important;
+}
+
+.dots1 {
+  width: 12rem;
+  height: 12rem;
+  position: absolute;
+  z-index: 1;
+  top: 95rem;
+  left: 12rem;
+}
+
+.dots2 {
+  width: 10rem;
+  height: 10rem;
+  z-index: 2;
+  top: 115rem;
+  left: 50rem;
+  position: absolute;
+}
+.abstract {
+  width: 10rem;
+  height: 10rem;
+  z-index: 1;
+  top: 115rem;
+  left: 55rem;
+  position: absolute;
+}
+.dashed {
+  width: 10rem;
+  height: 10rem;
+  z-index: 3;
+  top: 98rem;
+  left: 15rem;
+  position: absolute;
+}
+
+.onlinecourses .learnmore,
+.whyUs .learnmore {
+  width: 10rem;
+  height: 3rem;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #14213d;
+}
+
+.onlinecourses h5 {
+  text-align: center;
+  color: rgb(164, 163, 163);
+}
+
+.onlinecourses h1 {
+  text-align: center;
+  font-weight: 600;
+  color: #14213d;
+  margin-bottom: 2rem;
+}
+
+.popular-courses {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.popular-courses .card {
+  width: 15rem;
+  height: 25rem;
+  position: relative;
+  border-radius: 10px;
+}
+
+.popular-courses .card .overlay {
+  padding: 2rem;
+}
+
+.popular-courses .card .card-body {
+  line-height: 2rem;
+}
+
+.popular-courses .card .badge {
+  width: 5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2rem;
+  background-color: #5751e1;
+}
+
+.popular-courses .card .overlay .badge {
+  width: 5rem;
+  height: 1.5rem;
+  display: flex;
+  color: #14213d;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.2rem;
+  background-color: white;
+}
+
+.popular-courses .card span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.popular-courses .card .overlay span {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+
+.popular-courses .card p {
+  font-size: 12px;
+  line-height: 1.5rem;
+  color: rgb(114, 114, 114);
+  text-align: justify;
+}
+
+.popular-courses .card .overlay p {
+  font-size: 12px;
+  line-height: 1.5rem;
+  color: white;
+  text-align: justify;
+}
+
+.overlay {
+  display: none;
+}
+
+.popular-courses .card .overlay .rating {
+  color: #ffb703;
+}
+
+.popular-courses .card:hover .overlay {
+  display: block;
+  width: 15rem;
+  height: 25rem;
+  background-color: rgb(134, 134, 134);
+  position: absolute;
+}
+
+.popular-courses .card .overlay .enrolnow {
+  width: 8rem;
+  height: 3rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb703;
+}
+
 @media screen and (max-width: 768px) {
   .category-section {
     height: 100rem;
@@ -442,30 +688,49 @@
     gap: 1.2rem;
   }
 
-  .category-section h2,
-  .category-section p {
+  .category-section h2 {
     text-align: center;
+    font-size: 18px;
   }
 
-  .shape1,.shape2,.shape3{
+  .category-section p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .shape1,
+  .shape2,
+  .shape3 {
     display: none;
   }
 
   .techCadd {
-    gap: 4rem;
-    height:50rem;
-    padding: 0rem!important;
+    gap: 3rem;
+    height: 50rem;
     flex-direction: column;
-    margin: 0!important;
+    margin: 0 !important;
   }
 
-  .left-div, .right-div {
-    width: 100%; 
-    text-align: center; 
+  .techCadd h2 {
+    font-size: 18px;
   }
 
-  .mainImage{
-    position: relative; 
+  .techCadd h6 {
+    font-size: 14px;
+  }
+
+  .techCadd p {
+    margin-top: 2rem;
+  }
+
+  .left-div,
+  .right-div {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainImage {
+    position: relative;
     top: auto;
     left: auto;
     width: 20rem;
@@ -473,31 +738,125 @@
     margin: 0 auto;
   }
   .right-div h6,
-  .right-div h1,
+  .right-div h2,
   .right-div p,
   .right-div ul {
     position: relative;
     left: auto;
     top: auto;
-    text-align: center; 
+    text-align: center;
   }
 
-  .right-div p{
-    left: 0.2rem;
-    right: 0rem!important;
+  .right-div p {
+    right: 0rem !important;
     padding-inline: 1rem;
-    text-align: justify!important;
-  }
-  
-  .right-div ul{
-    padding-left: 1rem!important;
+    text-align: justify !important;
   }
 
-  .aboutus{
-    margin-top: 5rem;
+  .right-div ul {
+    padding-left: 1rem !important;
   }
 
-  .aboutus div{
+  .aboutus div {
     padding: 1rem;
+  }
+
+  .whyUs {
+    height: 110rem;
+    flex-direction: column;
+    padding: 3rem !important;
+  }
+
+  .collaborators {
+    flex-direction: column;
+  }
+
+  .collab-right {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .collab-left {
+    text-align: center;
+    padding-inline: 0rem !important;
+  }
+
+  .collaborators p {
+    padding-inline: 0rem !important;
+    padding-block: 0rem !important;
+  }
+
+  .slider {
+    padding: 0rem !important;
+  }
+
+  .brands .brands-name {
+    flex-direction: column;
+  }
+
+  .brands .brands-name img {
+    width: 200px;
+    height: 120px;
+  }
+
+  .onlinecourses {
+    margin-top: 2rem;
+    margin-bottom: 25rem;
+    height: 380rem !important;
+  }
+
+  .popular-courses {
+    grid-template-columns: 3fr !important;
+  }
+
+  .popular-courses .card {
+    width: 20rem;
+    height: 28rem;
+  }
+
+  .popular-courses .card .overlay {
+    width: 20rem!important;
+    height: 28rem!important;
+  }
+
+  .popular-courses .card .overlay .enrolnow{
+    margin-top: 7rem;
+  }
+
+  .popular-courses .card .overlay span{
+    font-size: 16px;
+  }
+
+  .popular-courses .card .overlay p{
+    font-size: 14px;
+  }
+
+  .management .names {
+    grid-template-columns: 3fr;
+  }
+
+  .management h2 {
+    font-size: 22px;
+  }
+
+  .dots1,
+  .dots2,
+  .abstract,
+  .dashed {
+    display: none;
+  }
+
+  .quarter {
+    width: 22rem;
+    top: 370rem;
+    height: 30rem;
+    margin-inline: 20px;
+    grid-template-columns: 2fr;
+  }
+
+  .enrolled,
+  .enrolled1,
+  .branchess,
+  .branchess1 {
+    border: none !important;
   }
 }

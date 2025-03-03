@@ -7,6 +7,7 @@
   align-items: center;
   position: sticky;
   justify-content: space-between;
+  box-shadow: 3px 3px 5px rgb(136, 129, 129);
 }
 
 .logo img {
