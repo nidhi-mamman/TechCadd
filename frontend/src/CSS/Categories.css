@@ -709,6 +709,7 @@
     height: 50rem;
     flex-direction: column;
     margin: 0 !important;
+    padding: 0rem !important;
   }
 
   .techCadd h2 {
@@ -757,6 +758,9 @@
     padding-left: 1rem !important;
   }
 
+  .aboutus {
+    padding: 0rem !important;
+  }
   .aboutus div {
     padding: 1rem;
   }
@@ -764,7 +768,7 @@
   .whyUs {
     height: 110rem;
     flex-direction: column;
-    padding: 3rem !important;
+    padding: 1rem !important;
   }
 
   .collaborators {
@@ -799,8 +803,8 @@
   }
 
   .onlinecourses {
-    margin-top: 2rem;
-    margin-bottom: 25rem;
+    margin-top: 5rem;
+    margin-bottom: 20rem;
     height: 380rem !important;
   }
 
@@ -814,19 +818,19 @@
   }
 
   .popular-courses .card .overlay {
-    width: 20rem!important;
-    height: 28rem!important;
+    width: 20rem !important;
+    height: 28rem !important;
   }
 
-  .popular-courses .card .overlay .enrolnow{
+  .popular-courses .card .overlay .enrolnow {
     margin-top: 7rem;
   }
 
-  .popular-courses .card .overlay span{
+  .popular-courses .card .overlay span {
     font-size: 16px;
   }
 
-  .popular-courses .card .overlay p{
+  .popular-courses .card .overlay p {
     font-size: 14px;
   }
 
@@ -846,8 +850,8 @@
   }
 
   .quarter {
-    width: 22rem;
-    top: 370rem;
+    width: 20rem;
+    top: 365rem;
     height: 30rem;
     margin-inline: 20px;
     grid-template-columns: 2fr;
