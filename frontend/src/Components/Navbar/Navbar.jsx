@@ -34,18 +34,16 @@ const Navbar = () => {
                 </div>
                 <div className="mobile-items">
                     <img src={profile} alt="profile" width={35} height={35} />
-                    <img src={menu} alt="menu" width={40} height={40} onClick={() => setisMenuOpen(!isMenuOpen)} />
+                    {
+                        isMenuOpen ?
+                            <RxCross1 size={28} style={{ color: "#5751e1" }} onClick={() => setisMenuOpen(!isMenuOpen)}/> :
+                            <img src={menu} alt="menu" width={40} height={40} onClick={() => setisMenuOpen(!isMenuOpen)} />
+
+                    }
                 </div>
             </div>
             <div className={`mobile-menu ${isMenuOpen ? 'show' : 'hide'}`}>
                 <ul>
-                    <li className='mobile-item'>
-                        <div className="logo-cross">
-                            <Link to='/'><img src={logo} alt="" /></Link>
-                            <RxCross1 size={24} style={{ color: "#5751e1", marginRight: "1.5rem" }} onClick={() => setisMenuOpen(!isMenuOpen)} />
-                        </div>
-
-                    </li>
                     <li className="mobile-item"><Link to='/'>Home</Link></li>
                     <li className="mobile-item"><Link to='/about'>About</Link></li>
                     <li className="mobile-item"><Link to='/contact'>Contact</Link></li>
