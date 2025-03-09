@@ -183,7 +183,7 @@
 
   .about-gallery {
     margin-top: 5rem;
-    padding: 2rem;
+    padding-inline: 1rem;
   }
 
   .gallery {
