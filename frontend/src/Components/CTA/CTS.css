@@ -1,0 +1,95 @@
+.CTA {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 20rem;
+  margin-bottom: 4rem;
+}
+
+.or {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: white;
+  color: #14213d;
+  font-weight: 600;
+}
+
+.email-section p,
+.call-section p {
+  margin-bottom: 0.5rem !important;
+}
+
+.email-section {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.call-section {
+  text-align: left;
+}
+
+.CTA-section {
+  background: #14213d;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 3;
+}
+
+.dots11,
+.dots22 {
+  position: absolute;
+  z-index: 2;
+}
+
+.dots11{
+  top: 3rem;
+  left: 15rem;
+}
+
+.dots22 {
+  top: 10rem;
+  right: 18rem;
+}
+
+.abstract1 {
+  position: absolute;
+  z-index: 1;
+}
+
+.abstract1 {
+  top: 3rem;
+  left: 18rem;
+}
+@media screen and (max-width: 768px) {
+  .CTA {
+    width: 100%;
+  }
+
+  .CTA-section {
+    width: 20rem;
+  }
+
+  .email-section,
+  .call-section {
+    font-size: 8px;
+  }
+
+  .or {
+    width: 2rem;
+    height: 2rem;
+    font-size: 10px;
+  }
+}

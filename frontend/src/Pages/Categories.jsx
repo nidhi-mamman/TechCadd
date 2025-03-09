@@ -14,8 +14,8 @@ import shape2 from "../assets/blog/shape-37.png";
 import shape3 from "../assets/blog/shape-02.png";
 import mainimage from "../assets/blog/main.webp";
 import { GiCheckMark } from "react-icons/gi";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import shrishyam from "../assets/banner/shrishyam.png";
 import whitehorse from "../assets/banner/WhiteHorse.png";
 import icutech from "../assets/banner/IAM.png";
@@ -39,19 +39,23 @@ import mern from "../assets/jal images/mern stack.webp";
 import { IoIosStar } from "react-icons/io";
 import datascience from "../assets/jal images/DATA SCIENCE (O).webp";
 import { FaArrowRight } from "react-icons/fa6";
-import ceo from '../assets/blog/ceo.webp'
-import shilpa from '../assets/blog/shilpa-mam.jpg'
-import subodh from '../assets/blog/team3.webp'
-import rama from '../assets/blog/team5.webp'
-import hr from '../assets/blog/team6.webp'
-import hod from '../assets/blog/team2.webp'
-import leader from '../assets/blog/team1.webp'
-import gurpinder from '../assets/blog/gurpindersir3.png'
-import dots1 from '../assets/blog/shape-02.png'
-import dashed from '../assets/blog/dashed.png'
-import dots2 from '../assets/blog/shape-37.png'
-import abstract from '../assets/blog/abstract.webp'
-
+import ceo from "../assets/blog/ceo.webp";
+import shilpa from "../assets/blog/shilpa-mam.jpg";
+import subodh from "../assets/blog/team3.webp";
+import rama from "../assets/blog/team5.webp";
+import hr from "../assets/blog/team6.webp";
+import hod from "../assets/blog/team2.webp";
+import leader from "../assets/blog/team1.webp";
+import gurpinder from "../assets/blog/gurpindersir3.png";
+import dots1 from "../assets/blog/shape-02.png";
+import dashed from "../assets/blog/dashed.png";
+import dots2 from "../assets/blog/shape-37.png";
+import abstract from "../assets/blog/abstract.webp";
+import S from "../assets/blog/s.cmnt.webp";
+import K from "../assets/blog/k.cmnt.webp";
+import quotes from "../assets/blog/quote.png";
+import team from '../assets/banner/staff.png'
+import  CTA from '../Components/CTA/CTA'
 
 const Slider = () => {
   return (
@@ -651,6 +655,259 @@ const Slider = () => {
         </div>
       </div>
 
+      <div className="reflection">
+        <div className="reflection-content">
+          <h1>Our Students Reflection</h1>
+          <p>
+            <b>&quot;Our Student Reflections&quot;</b> captures the distinctive
+            journeys of each student, celebrating their individual insights,
+            challenges, and remarkable achievements.
+          </p>
+          <p className="learnmore">
+            View All <FaArrowRight />
+          </p>
+        </div>
+
+        <div className="slider">
+          <Swiper
+            spaceBetween={40}
+            slidesPerView={2}
+            loop={true}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={K}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={S}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={K}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={S}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+      <div className="reflection-mobile">
+        <div className="reflection-content-mobile">
+          <h1>Our Students Reflection</h1>
+          <p>
+            <b>&quot;Our Student Reflections&quot;</b> captures the distinctive
+            journeys of each student, celebrating their individual insights,
+            challenges, and remarkable achievements.
+          </p>
+        </div>
+
+        <div className="slider-mobile">
+          <Swiper
+            spaceBetween={40}
+            slidesPerView={1}
+            loop={true}
+            modules={[Autoplay]}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={K}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={S}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={K}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="review">
+                <div className="imglogo">
+                  <img
+                    src={S}
+                    alt=""
+                    className="namelogo"
+                    width={60}
+                    height={60}
+                  />
+                </div>
+                <div className="quote">
+                  <img src={quotes} width={20} height={20} alt="" />
+                </div>
+                <p className="slider-content">
+                  TechCADD is an outstanding institute for Full Stack training!
+                  The instructors are knowledgeable and supportive, and the
+                  hands-on projects truly enhance learning. Highly recommend!
+                </p>
+                <p style={{ color: "#ffb703" }}><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /><IoIosStar size={18} /></p>
+                <b style={{ fontSize: '12px' }}>Karan</b>
+                <p style={{ color: "grey" }}>Student</p>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </div>
+
+      <CTA/>
+
+      <div className="team">
+        <h1>Our Team</h1>
+        <img src={team} className="staffpic" alt="" />
+      </div>
+
       <div className="collaborators">
         <div className="collab-left">
           <h6>OUR PARTNERS</h6>
@@ -687,142 +944,61 @@ const Slider = () => {
             <div className="ceo">
               <img src={ceo} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={shilpa} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={subodh} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={rama} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={hr} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={hod} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={leader} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
           <div>
             <div className="ceo">
               <img src={gurpinder} alt="" height={150} width={150} />
             </div>
-            <p className="name">
-              Mr.Gourav Gupta
-            </p>
-            <p className="designation">
-              CEO & Founder
-            </p>
+            <p className="name">Mr.Gourav Gupta</p>
+            <p className="designation">CEO & Founder</p>
           </div>
         </div>
       </div>
 
-      {/* <div className="gallery">
-      <div className="slider">
-        <Swiper
-          spaceBetween={30}
-          slidesPerView={3}
-          centeredSlides={false}
-          loop={true}
-          speed={1000}
-          autoplay={{
-            delay: 1000,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            320: { slidesPerView: 1, spaceBetween: 10 },
-            480: { slidesPerView: 2, spaceBetween: 15 },
-            768: { slidesPerView: 1, spaceBetween: 20 },
-            1024: { slidesPerView: 4, spaceBetween: 30 },
-            1440: { slidesPerView: 5, spaceBetween: 40 },
-          }}
-          modules={[Autoplay]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <img
-              src={shrishyam}
-              alt=""
-              height={100}
-              width={200}
-              style={{ display: "block" }}
-            />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={whitehorse} alt="" height={100} width={200} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={icutech} alt="" height={100} width={200} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={edutech} alt="" height={100} width={220} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={cps} alt="" height={100} width={200} />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={homedrop} alt="" height={150} width={200} />
-          </SwiperSlide>
-        </Swiper>
-        </div>
-      </div> */}
     </>
   );
 };
