@@ -94,7 +94,18 @@
   right: 2rem;
   top: 33rem;
   z-index: 2;
+  animation: rotation 5s linear infinite;
 }
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 
 .dots22 {
   position: absolute;

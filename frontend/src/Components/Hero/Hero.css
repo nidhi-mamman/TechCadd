@@ -33,6 +33,18 @@
   z-index: 1;
   width: 600px;
   height: 500px;
+  animation:slideUp 1.5s ease-in-out forwards!important;
+}
+
+@keyframes slideUp {
+  from {
+    transform: scale(0) translate(50px, 100vh); 
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
 }
 
 .banner-img {
@@ -68,6 +80,18 @@
   width: 300px;
   height: 300px;
   position: absolute;
+  animation: slideIn 3s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .yellow-arrow {
@@ -87,6 +111,18 @@
   z-index: 2;
   margin-right: 10rem;
   margin-bottom: 0rem !important;
+  animation: slide 1.5s ease-out forwards;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .hero-txt b {
@@ -120,6 +156,18 @@
   margin-left: 1rem;
   line-height: 1.8rem;
   font-family: "Poppins";
+  animation: slidein 1.5s ease-out forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .checkCourses {
@@ -164,7 +212,7 @@
   color: #14213d;
   font-size: 16px;
   font-family: "Poppins";
-  margin-bottom: 0rem!important;
+  margin-bottom: 0rem !important;
 }
 
 .play-area {
@@ -197,7 +245,7 @@
   position: absolute;
   padding: 10px;
   width: 15rem;
-  height:6rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,8 +260,9 @@
   background-color: white;
 }
 
-.students p,.group p{
-  margin: 0rem!important;
+.students p,
+.group p {
+  margin: 0rem !important;
 }
 
 .students p span,
@@ -278,7 +327,6 @@
   border: 1px solid white;
 }
 
-
 @media screen and (max-width: 768px) {
   .hero-section {
     height: 55rem;
@@ -290,12 +338,13 @@
   }
 
   .yellow-arrow,
-  .curl,.students {
+  .curl,
+  .students {
     display: none;
   }
 
-  .left-section{
-    padding-inline: 1rem!important;
+  .left-section {
+    padding-inline: 1rem !important;
   }
 
   .left-section,
@@ -311,10 +360,10 @@
     margin-right: 0rem !important;
   }
 
-  .checkCourses{
+  .checkCourses {
     width: 13rem;
     font-size: 14px;
-    margin-bottom: 0rem!important;
+    margin-bottom: 0rem !important;
   }
 
   .sub-txt {
@@ -354,15 +403,14 @@
     margin-bottom: 10rem;
     margin-top: 0rem !important;
   }
-  .cross-shape{
+  .cross-shape {
     margin-top: 20rem;
-    margin-right:15rem;
+    margin-right: 15rem;
   }
 
-  .group{
-    margin-top:15rem;
+  .group {
+    margin-top: 15rem;
     margin-left: 10rem;
     box-shadow: none;
   }
 }
-

@@ -11,6 +11,7 @@ import carousel from '../../assets/blog/students.png'
 import { GrGroup } from "react-icons/gr"
 
 const Hero = () => {
+    
     return (
         <>
             <div className="hero-section">

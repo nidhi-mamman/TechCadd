@@ -1,4 +1,4 @@
-import "../CSS/Categories.css";
+import "../CSS/Breadcrumbs.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -47,7 +47,7 @@ import hr from "../assets/blog/team6.webp";
 import hod from "../assets/blog/team2.webp";
 import leader from "../assets/blog/team1.webp";
 import gurpinder from "../assets/blog/gurpindersir3.png";
-import dots1 from "../assets/blog/shape-02.png";
+import dots1 from "../assets/blog/shape-13.png";
 import dashed from "../assets/blog/dashed.png";
 import dots2 from "../assets/blog/shape-37.png";
 import abstract from "../assets/blog/abstract.webp";
@@ -55,7 +55,8 @@ import S from "../assets/blog/s.cmnt.webp";
 import K from "../assets/blog/k.cmnt.webp";
 import quotes from "../assets/blog/quote.png";
 import team from '../assets/banner/staff.png'
-import  CTA from '../Components/CTA/CTA'
+import CTA from '../Components/CTA/CTA'
+import stroke from '../assets/blog/stroke.png'
 
 const Slider = () => {
   return (
@@ -100,43 +101,47 @@ const Slider = () => {
 
       <div className="techCadd">
         <div className="left-div">
-          <img src={shape1} className="shape1" />
-          <img src={shape2} className="shape2" />
-          <img src={shape3} className="shape3" />
-          <img src={mainimage} className="mainImage" alt="" />
+          <div className="img-stack">
+            <img src={shape1} className="shape shape1" />
+            <img src={shape2} className="shape shape2" />
+            <img src={shape3} className="shape shape3" />
+            <img src={mainimage} className="mainImage" alt="" />
+          </div>
         </div>
         <div className="right-div">
-          <h6>TECHCADD COMPUTER EDUCATION</h6>
-          <h2>
-            Learn & Grow Your Skills From <br /> <span>TechCADD</span>
-          </h2>
-          <p>
-            Learn and grow your skills with TechCADD, your trusted platform for
-            education. Whether you&apos;re looking to upgrade your technical
-            knowledge or acquire new professional skills, TechCADD provides{" "}
-            <span>Best IT Training Institute in Ludhiana</span>. Empower your
-            career with our expertly designed courses today!
-          </p>
-          <ul>
-            <li>
-              <GiCheckMark />
-              Expert Trainers
-            </li>
-            <li>
-              <GiCheckMark />
-              Digital Learning
-            </li>
-            <li>
-              <GiCheckMark />
-              Ongoing Access
-            </li>
-          </ul>
+          <div className="right-div-content">
+            <h6>TECHCADD COMPUTER EDUCATION</h6>
+            <h2>
+              Learn & Grow Your Skills From <br /> <span><p>TechCADD</p><img src={stroke} className="stroke" /></span>
+            </h2>
+            <p>
+              Learn and grow your skills with TechCADD, your trusted platform for
+              education. Whether you&apos;re looking to upgrade your technical
+              knowledge or acquire new professional skills, TechCADD provides{" "}
+              <span>Best IT Training Institute in Ludhiana</span>. Empower your
+              career with our expertly designed courses today!
+            </p>
+            <ul className="benefits">
+              <li>
+                <GiCheckMark />
+                <span> Expert Trainers</span>
+              </li>
+              <li>
+                <GiCheckMark />
+                <span> Expert Trainers</span>
+              </li>
+              <li>
+                <GiCheckMark />
+                <span> Expert Trainers</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="aboutus">
         <h6>ABOUT US</h6>
-        <h2>TechCADD Computer Education</h2>
+        <h2><span>TechCADD Computer Education </span><img src={stroke} className="stroke" /></h2>
         <div>
           <p>
             Techcadd Computer Training Institute is dedicated to fostering skill
@@ -185,7 +190,7 @@ const Slider = () => {
 
       <div className="whyUs">
         <div className="whyUs-left">
-          <p>
+          <div>
             <b>Hands-On Learning</b>
             <p>
               {" "}
@@ -195,8 +200,8 @@ const Slider = () => {
               the challenges of your future job with practical knowledge and a
               strong skill set. best IT training institute in jalandhar
             </p>
-          </p>
-          <p>
+          </div>
+          <div>
             <b> Industry-Recognized Certifications</b>
             <p>
               Gain industry-recognized certifications that validate your skills
@@ -204,8 +209,8 @@ const Slider = () => {
               certifications demonstrate your commitment to mastering in-demand
               skills, making you stand out as a highly qualified candidate.
             </p>
-          </p>
-          <p>
+          </div>
+          <div>
             <b>High Placement Success </b>
             <p>
               As the best computer training institute in Jalandhar,
@@ -215,11 +220,13 @@ const Slider = () => {
               training helps our students gain trust with employers, increasing
               their chances of success.
             </p>
-          </p>
+          </div>
         </div>
         <div className="whyUs-right">
           <h6>WHY US</h6>
-          <h4>Why We Are #1 In The Industry?</h4>
+          <h2>Why Choose TechCADD </h2>
+          <h2>Computer Education?</h2>
+          <img src={stroke} alt="" className="stroke"/>
           <p>
             Experience top-tier education at TechCADD, the best IT training
             institute in Jalandhar. We are dedicated to helping you sharpen your
@@ -779,6 +786,7 @@ const Slider = () => {
           </Swiper>
         </div>
       </div>
+
       <div className="reflection-mobile">
         <div className="reflection-content-mobile">
           <h1>Our Students Reflection</h1>
@@ -901,7 +909,7 @@ const Slider = () => {
         </div>
       </div>
 
-      <CTA/>
+      <CTA />
 
       <div className="team">
         <h1>Our Team</h1>
@@ -998,7 +1006,6 @@ const Slider = () => {
           </div>
         </div>
       </div>
-
     </>
   );
 };

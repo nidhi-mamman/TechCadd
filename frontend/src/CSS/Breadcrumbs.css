@@ -6,6 +6,16 @@
   flex-direction: column;
   height: 40rem;
   padding: 2rem;
+  animation: category 2s linear;
+}
+
+@keyframes category {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .category-section h6 {
@@ -162,7 +172,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   padding: 2rem;
 }
 
@@ -171,132 +180,144 @@
   width: 50%;
 }
 
-.mainImage {
-  width: 30rem;
-  height: 30rem;
-  top: 4rem;
-  left: 5rem;
-  z-index: 3;
-  position: absolute;
-  border-radius: 20px;
-}
-
-.shape1 {
-  top: 0.5rem;
-  left: 1rem;
-  z-index: 1;
+.shape {
   position: absolute;
 }
 
-.shape2 {
-  top: 1.5rem;
-  left: 1rem;
-  z-index: 2;
-  position: absolute;
-}
-.shape3 {
-  top: 22rem;
-  left: 11rem;
-  position: absolute;
-}
-
-.right-div h6 {
-  top: 8rem;
-  left: 38rem;
-  position: absolute;
-  color: rgb(118, 118, 118) !important;
-}
-
-.right-div h2 {
-  top: 10rem;
-  left: 38rem;
-  position: absolute;
-  color: #14213d;
-  font-weight: 600;
-}
-
-.right-div h2 span {
-  font-weight: 600;
+.img-stack {
   position: relative;
-  color: red !important;
-  display: inline-block;
-}
-
-.right-div h2 span::before {
-  content: "";
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  border-radius: 50px;
-  background-color: red;
-}
-
-.right-div p {
-  top: 17rem;
-  left: 38rem;
-  right: 2rem;
-  font-size: 14px;
-  text-align: justify;
-  position: absolute;
-  color: rgb(140, 138, 138) !important;
-}
-
-.right-div p span {
-  font-weight: 600;
-  color: rgb(92, 90, 90) !important;
-}
-
-.right-div ul {
-  top: 24rem;
-  left: 36rem;
-  line-height: 2.3rem;
-  font-size: 14px;
-  position: absolute;
-}
-
-.right-div ul li {
-  gap: 1rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-/* ABOUT US SECTION*/
-
-.aboutus {
-  text-align: center;
-  padding: 2rem;
+.mainImage {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 20px;
+  position: relative;
+  z-index: 4;
 }
 
+.shape1 {
+  top: -4rem;
+  left: -2rem;
+  z-index: 1;
+}
+
+.shape2 {
+  top: -4rem;
+  left: -2rem;
+  z-index: 2;
+}
+
+.shape3 {
+  top: 18rem;
+  left: 10rem;
+  z-index: 3;
+}
+
+.right-div-content h6,
 .aboutus h6 {
-  color: rgb(118, 118, 118) !important;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(145, 143, 143);
 }
 
-.aboutus h2,
-.management h2,
-.collaborators h4 {
-  color: #14213d;
+.right-div-content h2,
+.aboutus h2 {
+  color: black;
   font-weight: 600;
 }
 
-.aboutus div {
-  padding: 2rem;
+.right-div-content h2 span p {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 32px;
+  flex-direction: column;
+  color: red;
+  line-height: 2.5rem;
+}
+
+.right-div-content h2 span .stroke {
+  margin-top: -3rem;
+  width: 10rem;
+}
+
+.aboutus h2 .stroke {
+  width: 10rem;
+}
+
+.whyUs-right .stroke {
+  width: 10rem;
+}
+
+.right-div-content p {
   font-size: 14px;
+  line-height: 1.5rem;
   text-align: justify;
+  color: rgb(145, 143, 143);
 }
 
-.aboutus div p {
-  color: rgb(118, 118, 118) !important;
+.right-div-content .benefits {
+  font-size: 14px;
+  margin-left: -2rem;
+  line-height: 2rem;
 }
 
+.right-div-content.benefits li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem !important;
+}
+
+.right-div {
+  animation: slideIn 1.2s linear forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.aboutus {
+  margin-top: 4rem;
+  margin-inline: 4rem;
+}
+
+.aboutus div {
+  text-align: justify;
+  margin-top: 2rem;
+  font-size: 14px;
+  line-height: 2rem;
+  color: rgb(145, 143, 143);
+}
+
+.aboutus h6,
+.aboutus h2 {
+  text-align: center;
+}
+
+.aboutus h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 /* WHY US SECTION */
 
 .whyUs {
-  height: 42rem;
+  height: 45rem;
   padding: 4rem;
   font-size: 14px;
   gap: 2rem;
+  margin-block: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -308,7 +329,7 @@
 }
 
 .brands h1 {
-  color: #14213d;
+  color: black;
   font-weight: 600;
 }
 
@@ -319,14 +340,46 @@
   width: 100%;
 }
 
+.whyUs-left div b {
+  font-weight: 600;
+  font-size: 16px;
+  color: black;
+}
+
+.whyUs-left div p {
+  margin-top: 1rem;
+  color: rgb(145, 143, 143);
+}
+
+.whyUs-right {
+  animation: moveUp 1.4s linear forwards;
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .whyUs-right p,
-.whyUs-right h4,
+.whyUs-right h2,
 .whyUs-right ul {
   line-height: 2.4rem;
 }
 
+.whyUs-right p {
+  margin-top: 2rem;
+  color: rgb(145, 143, 143);
+}
+
 .whyUs-right ul {
   margin-top: 1rem;
+  color: black;
   padding: 0rem !important;
 }
 
@@ -336,9 +389,9 @@
   align-items: center;
 }
 
-.whyUs-right h4 {
+.whyUs-right h2 {
   font-weight: 600;
-  color: #14213d;
+  color: black;
 }
 
 .whyUs-right p {
@@ -601,6 +654,16 @@
   top: 98rem;
   left: 15rem;
   position: absolute;
+  animation: rotation 5s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .onlinecourses .learnmore,
@@ -768,7 +831,6 @@
   justify-content: center;
   background-color: #ffb703;
 }
-
 
 @media screen and (max-width: 768px) {
   .category-section {
@@ -962,7 +1024,10 @@
     grid-template-columns: 2fr;
   }
 
-  .reflection,.dots11,.dots22,.abstract1{
+  .reflection,
+  .dots11,
+  .dots22,
+  .abstract1 {
     display: none;
   }
 
@@ -1019,4 +1084,3 @@
     border: none !important;
   }
 }
-
