@@ -407,7 +407,7 @@
   }
 
   .gallery {
-    margin: 2rem;
+    margin: 0.5rem;
   }
 
   .mission,
@@ -416,12 +416,23 @@
     height: 100%;
   }
 
-  .abouts-benefits,.card-wrapper {
+  .abouts-benefits {
+    margin-top: 10rem;
+  }
+
+  .abouts-benefits,
+  .card-wrapper {
     flex-direction: column;
   }
 
-  .why-card1,.why-card2,.why-card3{
+  .why-card1,
+  .why-card2,
+  .why-card3 {
     height: 30rem;
   }
 
+  .why-chose-us h1,
+  .why-chose-us span h1 {
+    font-size: 28px;
+  }
 }

@@ -176,7 +176,7 @@
     flex-direction: column;
   }
 
-  .copyright p{
+  .copyright p {
     font-size: 14px;
   }
 
@@ -187,6 +187,10 @@
 
   .branches {
     display: block;
+  }
+
+  .branches ul li {
+    padding-left: 1rem;
   }
 
   .descript p {
