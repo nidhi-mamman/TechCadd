@@ -1,16 +1,17 @@
 .about-section {
-  height: 70rem;
+  height: 50rem;
   display: flex;
   position: relative;
   justify-content: center;
 }
+
 .about-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80rem;
+  height: 60rem;
   background-color: rgb(244, 244, 244);
   clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 80%);
   z-index: -1;
@@ -106,8 +107,7 @@
   }
 }
 
-
-.dots22 {
+.dots221 {
   position: absolute;
   top: 3rem;
   left: 0rem;
@@ -150,13 +150,215 @@
   max-width: 100%;
 }
 
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.card1,
+.card3 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+  background: white;
+}
+
+.reading,
+.satisfaction {
+  background-color: rgb(26 182 157 / 0.07);
+}
+
+.presentation,
+.man {
+  background-color: rgb(238 74 98 / 0.06);
+}
+
+.card2,
+.card4 {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 10px;
+  background: white;
+}
+
+.man,
+.presentation,
+.reading,
+.satisfaction {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.abouts-benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -5rem;
+  margin-bottom: 3rem;
+}
+.square-dots {
+  position: absolute;
+  z-index: -1;
+  right: 0rem !important ;
+  top: 70%;
+  width: 15rem;
+  height: 8rem;
+}
+
+.cards-dot {
+  position: absolute;
+  top: 12rem;
+  left: -5rem;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.why-chose-us {
+  text-align: center;
+}
+
+.why-chose-us h5 {
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 14px;
+  color: rgb(144, 144, 144);
+}
+
+.why-chose-us h1 {
+  color: black;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.why-chose-us h1 span {
+  color: red;
+  font-weight: 600;
+}
+
+.why-chose-us span h1 {
+  color: #14213d;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.why-chose-us .stroke {
+  width: 10rem;
+}
+
+.why-card1,
+.why-card2,
+.why-card3 {
+  background: white;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.why-card1 img,
+.why-card2 img,
+.why-card3 img {
+  width: 100%;
+}
+
+.card-wrapper {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.why-card2 {
+  width: 20rem;
+  height: 35rem;
+}
+
+.why-card1,
+.why-card3 {
+  width: 20rem;
+  height: 30rem;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 10rem;
+  left: 6.5rem;
+}
+.icon1 {
+  background: #1ab69d;
+}
+
+.icon2 {
+  background: #ee4a62;
+}
+.icon3 {
+  background: #4664e4;
+}
+.card-title {
+  font-weight: 600;
+  margin-top: 4rem;
+  color: black;
+}
+
+.card-body {
+  font-size: 15px;
+}
+
+.CTA-wrapper {
+  height: 50rem;
+  position: relative;
+  margin-top: -4rem;
+  padding-block: 6rem;
+}
+
+.CTA-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60rem;
+  background-color: rgb(244, 244, 244);
+  clip-path: polygon(0 5%, 100% 0%, 100% 90%, 0% 100%);
+  z-index: -1;
+}
+
 @media screen and (max-width: 768px) {
   .about-section {
     height: 120rem;
     flex-direction: column;
   }
 
-  .vision-content{
+  .vision-content {
     padding: 1rem;
     flex-direction: column;
   }
@@ -178,7 +380,7 @@
     margin-top: -13rem;
   }
   .dots21,
-  .dots22,
+  .dots221,
   .abstract2 {
     display: none;
   }

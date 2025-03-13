@@ -25,12 +25,14 @@
 }
 
 .email-section {
-  font-size: 14px;
+  font-size:20px;
   font-weight: 600;
   text-align: right;
 }
 
 .call-section {
+  font-size: 20px;
+  font-weight: 600;
   text-align: left;
 }
 
@@ -41,8 +43,8 @@
   align-items: center;
   justify-content: center;
   color: white;
-  width: 40rem;
-  padding: 2rem;
+  width: 50rem;
+  padding: 4rem;
   border-radius: 10px;
   position: absolute;
   z-index: 3;
@@ -54,14 +56,14 @@
   z-index: 2;
 }
 
-.dots11{
-  top: 3rem;
-  left: 15rem;
+.dots11 {
+  top: 0rem;
+  left: 12rem;
 }
 
 .dots22 {
-  top: 10rem;
-  right: 18rem;
+  top: 12rem;
+  right: 12rem;
 }
 
 .abstract1 {
@@ -70,8 +72,8 @@
 }
 
 .abstract1 {
-  top: 3rem;
-  left: 18rem;
+  top: 0rem;
+  left: 12rem;
 }
 @media screen and (max-width: 768px) {
   .CTA {
@@ -91,5 +93,11 @@
     width: 2rem;
     height: 2rem;
     font-size: 10px;
+  }
+
+  .dots11,
+  .dots22,
+  .abstract1 {
+    display: none;
   }
 }

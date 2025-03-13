@@ -352,7 +352,7 @@
 }
 
 .whyUs-right {
-  animation: moveUp 1.4s linear forwards;
+  animation: moveUp 1.2s linear forwards;
 }
 
 @keyframes moveUp {
@@ -414,6 +414,21 @@
   padding-inline: 3rem;
 }
 
+.collab-left h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.collab-left .stroke {
+  width: 10rem;
+  margin-left: -1rem;
+  margin-top: -1rem;
+}
+
+.collab-left p {
+  margin-top: 1.5rem;
+}
+
 .collab-right {
   width: 100%;
   display: grid;
@@ -428,7 +443,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 8rem;
+  margin-top: 4rem;
 }
 
 .management .names {
@@ -679,6 +694,8 @@
   justify-content: center;
   border-radius: 3px;
   align-items: center;
+  position: relative;
+  z-index: 99;
   background: #14213d;
 }
 
@@ -687,11 +704,33 @@
   color: rgb(164, 163, 163);
 }
 
+.onlinecourses .stroke {
+  width: 10rem;
+  margin-top: -2rem;
+  margin-left: 6rem;
+}
+
+.animate-courses {
+  animation: slidein 1s linear forwards;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .onlinecourses h1,
 .team h1 {
   text-align: center;
   font-weight: 600;
-  color: #14213d;
+  color: black;
+  font-size: 32px;
   margin-bottom: 2rem;
 }
 
@@ -715,6 +754,18 @@
   margin-top: 4rem;
   left: 3rem !important;
   z-index: 2;
+  animation: comeUp 1s linear forwards;
+}
+
+@keyframes comeUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .reflection-content-mobile {
@@ -726,23 +777,86 @@
 }
 
 .reflection-content h1 {
-  font-size: 26px;
+  font-size: 35px;
   font-weight: 600;
+  color: black;
   margin-bottom: 0.4rem;
+}
+
+.reflection-content .stroke {
+  width: 8rem;
 }
 
 .reflection-content p {
   font-size: 14px;
+  margin-top: 2rem !important;
+  color: rgb(145, 143, 143);
 }
 
 .staffpic {
   width: 100%;
   filter: grayscale(1.5);
 }
+
 .popular-courses {
-  display: grid;
+  display: flex;
   gap: 1rem;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row1,
+.row2,
+.row3 {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row1 {
+  animation: row1In 1s linear forwards;
+}
+
+@keyframes row1In {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.row2 {
+  animation: row2In 1.5s linear forwards;
+}
+
+@keyframes row2In {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.row3 {
+  animation: row3In 2s linear forwards;
+}
+
+@keyframes row3In {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .popular-courses .card {
@@ -750,6 +864,8 @@
   height: 25rem;
   position: relative;
   border-radius: 10px;
+  outline: none;
+  border: none;
 }
 
 .popular-courses .card .overlay {
@@ -806,6 +922,10 @@
   text-align: justify;
 }
 
+.reflection-mobile {
+  display: none;
+}
+
 .overlay {
   display: none;
 }
@@ -830,6 +950,29 @@
   align-items: center;
   justify-content: center;
   background-color: #ffb703;
+}
+
+.team img {
+  margin-top: 3rem;
+}
+
+.team .stroke {
+  width: 10rem;
+  margin-left: 34rem;
+  margin-top: -3rem;
+}
+
+.brands .stroke {
+  width: 10rem;
+}
+
+.management h2 {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.management .stroke {
+  width: 10rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -862,7 +1005,7 @@
     height: 50rem;
     flex-direction: column;
     margin: 0 !important;
-    padding: 0rem !important;
+    padding: 1rem !important;
   }
 
   .techCadd h2 {
@@ -884,34 +1027,43 @@
   }
 
   .mainImage {
-    position: relative;
-    top: auto;
-    left: auto;
     width: 20rem;
     height: 20rem;
     margin: 0 auto;
   }
-  .right-div h6,
-  .right-div h2,
-  .right-div p,
-  .right-div ul {
-    position: relative;
-    left: auto;
-    top: auto;
-    text-align: center;
+
+  .right-div-content h6 {
+    text-align: left;
+    font-size: 12px;
+  }
+  .right-div-content h2 {
+    text-align: left;
+    font-size: 20px;
   }
 
-  .right-div p {
-    right: 0rem !important;
-    padding-inline: 1rem;
+  .right-div-content h2 span p {
+    font-size: 26px;
+    gap: 0rem !important;
+  }
+
+  .right-div-content p {
+    margin: 0rem !important;
     text-align: justify !important;
   }
 
-  .right-div ul {
-    padding-left: 1rem !important;
+  .right-div-content .benefits {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  .right-div-content h2 span .stroke {
+    margin-top: -1rem;
+    margin-left: 0rem;
+    width: 8rem;
   }
 
   .aboutus {
+    margin-inline: 0rem !important;
     padding: 0rem !important;
   }
   .aboutus div {
@@ -956,20 +1108,30 @@
   }
 
   .onlinecourses {
-    margin-bottom: 22rem;
-    height: 380rem !important;
+    margin-bottom: 10rem;
+    height: 400rem !important;
   }
 
   .onlinecourses h1 {
-    font-size: 22px;
+    font-size: 30px;
   }
 
   .onlinecourses h5 {
     font-size: 16px;
   }
 
-  .popular-courses {
+  .row1,
+  .row2,
+  .row3 {
+    display: grid;
+    place-items: center;
     grid-template-columns: 3fr !important;
+  }
+
+  .onlinecourses .stroke {
+    width: 8rem;
+    margin-top: -2rem;
+    margin-left: 4rem;
   }
 
   .popular-courses .card {
@@ -999,7 +1161,7 @@
   }
 
   .management h2 {
-    font-size: 22px;
+    font-size: 26px;
   }
 
   .slider-mobile {
@@ -1018,16 +1180,13 @@
 
   .quarter {
     width: 20rem;
-    top: 370rem;
+    top: 378rem;
     height: 30rem;
     margin-inline: 20px;
     grid-template-columns: 2fr;
   }
 
-  .reflection,
-  .dots11,
-  .dots22,
-  .abstract1 {
+  .reflection {
     display: none;
   }
 
@@ -1039,7 +1198,8 @@
 
   .reflection-mobile {
     display: block;
-    padding: 2rem;
+    height: 50rem;
+    padding: 1rem;
     text-align: justify;
   }
 
@@ -1048,13 +1208,35 @@
     font-size: 14px;
   }
 
+  .reflection-content-mobile .learnmore {
+    width: 8rem;
+    height: 3rem;
+    gap: 1rem;
+    margin-top: 2rem;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    align-items: center;
+    background: #14213d;
+  }
+
   .reflection-content-mobile h1 {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     margin-bottom: 2rem;
   }
 
+  .reflection-content-mobile p {
+    color: rgb(145, 143, 143);
+  }
+  .reflection-content-mobile .stroke {
+    margin-top: -4rem;
+    margin-left: -1rem;
+    width: 10rem;
+  }
   .slider-mobile {
     width: 100%;
     height: 25rem;
@@ -1082,5 +1264,9 @@
   .branchess,
   .branchess1 {
     border: none !important;
+  }
+  .team .stroke {
+    width: 8rem;
+    margin-left: 8rem;
   }
 }

@@ -1,4 +1,4 @@
-import './CTS.css'
+import './CTA.css'
 import shape1 from "../../assets/blog/shape-36.png";
 import dots2 from "../../assets/blog/shape-37.png";
 import dots1 from "../../assets/blog/shape-13.png";

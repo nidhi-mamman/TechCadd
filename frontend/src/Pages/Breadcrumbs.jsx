@@ -112,7 +112,7 @@ const Slider = () => {
           <div className="right-div-content">
             <h6>TECHCADD COMPUTER EDUCATION</h6>
             <h2>
-              Learn & Grow Your Skills From <br /> <span><p>TechCADD</p><img src={stroke} className="stroke" /></span>
+              Learn & Grow Your Skills From <span><p>TechCADD</p><img src={stroke} className="stroke" /></span>
             </h2>
             <p>
               Learn and grow your skills with TechCADD, your trusted platform for
@@ -226,7 +226,7 @@ const Slider = () => {
           <h6>WHY US</h6>
           <h2>Why Choose TechCADD </h2>
           <h2>Computer Education?</h2>
-          <img src={stroke} alt="" className="stroke"/>
+          <img src={stroke} alt="" className="stroke" />
           <p>
             Experience top-tier education at TechCADD, the best IT training
             institute in Jalandhar. We are dedicated to helping you sharpen your
@@ -259,379 +259,390 @@ const Slider = () => {
       </div>
 
       <div className="onlinecourses">
-        <h5>POPULAR COURSES</h5>
-        <h1>Courses We Offer</h1>
+        <div className="animate-courses">
+          <h5>POPULAR COURSES</h5>
+          <h1>Courses We Offer</h1>
+          <img src={stroke} className="stroke" />
+        </div>
         <div className="popular-courses">
-          <div className="card">
-            <img src={AiCourse} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
+          <div className="row1">
+            <div className="card">
+              <img src={AiCourse} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
+            <div className="card">
+              <img src={cyber} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <img src={cyber} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
+            <div className="card">
+              <img src={python} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={python} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-            </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={digital} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-            </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={ethical} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-            </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
+            <div className="card">
+              <img src={digital} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
           </div>
-          <div className="card">
-            <img src={python1} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
+
+          <div className="row2">
+            <div className="card">
+              <img src={ethical} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
+            <div className="card">
+              <img src={python1} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <img src={java} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
+            <div className="card">
+              <img src={java} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={analysis} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-            </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={webdesigning} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-            </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <img src={mean} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-            </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
+            <div className="card">
+              <img src={analysis} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
           </div>
-          <div className="card">
-            <img src={datascience} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
+
+          <div className="row3">
+            <div className="card">
+              <img src={webdesigning} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
+            <div className="card">
+              <img src={mean} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <img src={mern} className="card-img-top" alt="..." />
-            <div className="card-body">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
+            <div className="card">
+              <img src={datascience} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
-            <div className="overlay">
-              <h6 className="badge">CSE/IT</h6>
-              <span>Artificial Intelligence Course</span>
-              <p className="rating">
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-                <IoIosStar size={18} />
-              </p>
-              <p className="card-text">
-                Transform your future with Ethical Hacking course at
-                Jalandhar&apos;s top computer institute. Learn cutting-edge
-                skills to thrive today!
-              </p>
-              <p className="enrolnow">
-                Enroll Now <FaArrowRight />
-              </p>
+            <div className="card">
+              <img src={mern} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+              </div>
+              <div className="overlay">
+                <h6 className="badge">CSE/IT</h6>
+                <span>Artificial Intelligence Course</span>
+                <p className="rating">
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                  <IoIosStar size={18} />
+                </p>
+                <p className="card-text">
+                  Transform your future with Ethical Hacking course at
+                  Jalandhar&apos;s top computer institute. Learn cutting-edge
+                  skills to thrive today!
+                </p>
+                <p className="enrolnow">
+                  Enroll Now <FaArrowRight />
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -665,6 +676,7 @@ const Slider = () => {
       <div className="reflection">
         <div className="reflection-content">
           <h1>Our Students Reflection</h1>
+          <img src={stroke} className='stroke' alt="" />
           <p>
             <b>&quot;Our Student Reflections&quot;</b> captures the distinctive
             journeys of each student, celebrating their individual insights,
@@ -790,10 +802,14 @@ const Slider = () => {
       <div className="reflection-mobile">
         <div className="reflection-content-mobile">
           <h1>Our Students Reflection</h1>
+          <img src={stroke} alt="" className="stroke" />
           <p>
             <b>&quot;Our Student Reflections&quot;</b> captures the distinctive
             journeys of each student, celebrating their individual insights,
             challenges, and remarkable achievements.
+          </p>
+          <p className="learnmore">
+            View All <FaArrowRight />
           </p>
         </div>
 
@@ -913,13 +929,15 @@ const Slider = () => {
 
       <div className="team">
         <h1>Our Team</h1>
+        <img src={stroke} className='stroke' alt="" />
         <img src={team} className="staffpic" alt="" />
       </div>
 
       <div className="collaborators">
         <div className="collab-left">
           <h6>OUR PARTNERS</h6>
-          <h4>Collaborate with Our Associates</h4>
+          <h2>Collaborate with Our Associates</h2>
+          <img src={stroke} className="stroke" alt="" />
           <p>
             Team up with our associates to explore uncharted territories.
             Together, we&apos;ll blend our strengths and inspire groundbreaking
@@ -938,6 +956,7 @@ const Slider = () => {
 
       <div className="brands">
         <h1>Our Brands</h1>
+        <img src={stroke} className='stroke' alt="" />
         <div className="brands-name">
           <img src={aitech} alt="" />
           <img src={techcadd} alt="" />
@@ -947,6 +966,7 @@ const Slider = () => {
 
       <div className="management">
         <h2>Our Management</h2>
+        <img src={stroke} className="stroke" alt="" />
         <div className="names">
           <div>
             <div className="ceo">
