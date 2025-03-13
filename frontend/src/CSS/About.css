@@ -354,7 +354,7 @@
   width: 100%;
   height: 60rem;
   background-color: rgb(244, 244, 244);
-  clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 80%);
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
   z-index: -1;
 }
 
