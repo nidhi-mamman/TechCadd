@@ -82,11 +82,14 @@
 
   .CTA-section {
     width: 20rem;
+    flex-direction: column;
+    margin-top: 5rem;
   }
 
   .email-section,
   .call-section {
-    font-size: 8px;
+    font-size: 18px;
+    text-align: center;
   }
 
   .or {

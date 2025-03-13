@@ -33,6 +33,7 @@ const About = () => {
             We Provide Best <span> Education </span>
             Services for you
           </h3>
+          <img src={stroke} className="stroke" alt="" />
           <p>
             Welcome to TechCADD Computer Education Institute, your gateway to
             technology in Jalandhar! We provide high-quality computer education,

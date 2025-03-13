@@ -44,6 +44,12 @@
   color: grey;
   width: 30rem;
   line-height: 1.7rem;
+  text-align: justify;
+}
+.about-section-content .stroke {
+  width: 10rem;
+  margin-top: -2rem;
+  margin-left: -1rem;
 }
 
 .gallery {
@@ -348,7 +354,7 @@
   width: 100%;
   height: 60rem;
   background-color: rgb(244, 244, 244);
-  clip-path: polygon(0 5%, 100% 0%, 100% 90%, 0% 100%);
+  clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 80%);
   z-index: -1;
 }
 
@@ -381,7 +387,9 @@
   }
   .dots21,
   .dots221,
-  .abstract2 {
+  .abstract2,
+  .cards-dot,
+  .square-dots {
     display: none;
   }
 
@@ -399,7 +407,7 @@
   }
 
   .gallery {
-    margin: 0rem;
+    margin: 2rem;
   }
 
   .mission,
@@ -407,4 +415,13 @@
     width: 100%;
     height: 100%;
   }
+
+  .abouts-benefits,.card-wrapper {
+    flex-direction: column;
+  }
+
+  .why-card1,.why-card2,.why-card3{
+    height: 30rem;
+  }
+
 }
