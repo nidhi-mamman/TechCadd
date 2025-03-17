@@ -15,7 +15,7 @@ import shape3 from "../assets/blog/shape-02.png";
 import mainimage from "../assets/blog/main.webp";
 import { GiCheckMark } from "react-icons/gi";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import shrishyam from "../assets/banner/shrishyam.png";
 import whitehorse from "../assets/banner/WhiteHorse.png";
 import icutech from "../assets/banner/IAM.png";
@@ -57,6 +57,13 @@ import quotes from "../assets/blog/quote.png";
 import team from '../assets/banner/staff.png'
 import CTA from '../Components/CTA/CTA'
 import stroke from '../assets/blog/stroke.png'
+import gall1 from '../assets/jal images/gallery-1.webp'
+import gall2 from '../assets/jal images/gallery-2.webp'
+import gall3 from '../assets/jal images/gallery-3.webp'
+import gall4 from '../assets/jal images/gallery-4.webp'
+import gall5 from '../assets/jal images/gallery-5.webp'
+import gall6 from '../assets/jal images/gallery-6.webp'
+import gall7 from '../assets/jal images/gallery-7.webp'
 
 const Slider = () => {
   return (
@@ -964,6 +971,72 @@ const Slider = () => {
         </div>
       </div>
 
+      <div className="gallery-wrapper">
+        <h1>Our Student Gallery</h1>
+        <img src={stroke} className="stroke" alt="" />
+        <div className="swiper-container">
+          <Swiper
+            spaceBetween={40}
+            slidesPerView={4}
+            loop={true}
+            modules={[Autoplay, Navigation]}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+            navigation={{
+              prevEl: ".custom-next", 
+              nextEl: ".custom-prev"
+            }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1, 
+              },
+              480: {
+                slidesPerView: 2, 
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 4, 
+              },
+            }}
+            className="myswiper"
+          >
+            <SwiperSlide>
+              <img src={gall1} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={gall2} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={gall3} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={gall4} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={gall5} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={gall6} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={gall7} alt="" className="gallery-img" />
+            </SwiperSlide>
+            <div className="custom-navigation">
+              <button className="custom-prev">
+                <span className="arrow">←</span>
+              </button>
+              <button className="custom-next">
+                <span className="arrow">→</span>
+              </button>
+            </div>
+          </Swiper>
+        </div>
+      </div>
+
       <div className="management">
         <h2>Our Management</h2>
         <img src={stroke} className="stroke" alt="" />
@@ -1026,6 +1099,7 @@ const Slider = () => {
           </div>
         </div>
       </div>
+
     </>
   );
 };

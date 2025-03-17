@@ -12,6 +12,9 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [isMenuOpen, setisMenuOpen] = useState(false)
+    const handleScrollToTop = () => {
+        window.scrollTo(0, 0);
+    };
     return (
         <>
             <div className="navbar">
@@ -19,13 +22,13 @@ const Navbar = () => {
                     <Link to='/'><img src={logo} alt="logo" /></Link>
                 </div>
                 <div className="nav-items">
-                    <ul className="items">
-                        <li className="item1"><Link to='/'>Home</Link></li>
-                        <li className="item2"><Link to='/about'>About</Link></li>
-                        <li className="item3"><Link to='/contact'>Contact</Link></li>
-                        <li className="item4"><Link to='/courses'>Courses</Link></li>
-                        <li className="item5"><Link to='/training'>Training</Link></li>
-                        <li className="item5"><Link to='/login'>Login</Link></li>
+                    <ul className="items" >
+                        <li className="item1"><Link to='/' onClick={handleScrollToTop}>Home</Link></li>
+                        <li className="item2"><Link to='/about' onClick={handleScrollToTop}>About</Link></li>
+                        <li className="item3"><Link to='/contact' onClick={handleScrollToTop}>Contact</Link></li>
+                        <li className="item4"><Link to='/courses' onClick={handleScrollToTop}>Courses</Link></li>
+                        <li className="item5"><Link to='/training' onClick={handleScrollToTop}>Training</Link></li>
+                        <li className="item5"><Link to='/login' onClick={handleScrollToTop}>Login</Link></li>
                     </ul>
                 </div>
                 <div className="demo-area">
@@ -36,7 +39,7 @@ const Navbar = () => {
                     <img src={profile} alt="profile" width={35} height={35} />
                     {
                         isMenuOpen ?
-                            <RxCross1 size={28} style={{ color: "#5751e1" }} onClick={() => setisMenuOpen(!isMenuOpen)}/> :
+                            <RxCross1 size={28} style={{ color: "#5751e1" }} onClick={() => setisMenuOpen(!isMenuOpen)} /> :
                             <img src={menu} alt="menu" width={40} height={40} onClick={() => setisMenuOpen(!isMenuOpen)} />
 
                     }
